@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id class="container">
+      <h1 class="heading">FILL THE FORM</h1>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="6f9147aa-15d5-43b8-a394-3bed67223afe"
+        />
+
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <label for="name" class="label"> fill form </label> <br />
+        <input
+          type="text"
+          name="name"
+          id=""
+          placeholder="Enter your name"
+          class="input"
+        /><br />
+        <input
+          type="email"
+          name="email"
+          required
+          id=""
+          placeholder="enter your email"
+          class="input"
+        /><br />
+        <input
+          type="tel"
+          name="Mobile-number"
+          required
+          id=""
+          placeholder="Enter your Mobile number"
+          class="input"
+        /><br />
+        <input
+          type="number"
+          name="Template number"
+          required
+          id=""
+          placeholder="Choose Template no"
+          class="input"
+        /><br />
+        <select type="branch" name="branch" required class="input">
+          <option value="" disabled selected>Select Branch</option>
+          <option value="cs">Computer Science</option>
+          <option value="me">Mechanical Engineering</option>
+          <option value="civil">Civil Engineering</option>
+          <option value="electrical">Electrical Engineering</option>
+          <option value="other">other</option>
+        </select>
+        <br />
+        <input
+          type="name"
+          name="github-link"
+          required
+          id=""
+          placeholder=" github link"
+          class="input"
+        /><br />
+        <input
+          type="name"
+          name=" facebook-id"
+          id=""
+          placeholder=" facebook link"
+          class="input"
+        /><br />
+        <input
+          type="name"
+          name="instagram-id"
+          id=""
+          placeholder=" instagram link"
+          class="input"
+        /><br />
+        <input
+          type="name"
+          name="Any-project"
+          required
+          id=""
+          placeholder=" any project link"
+          class="input"
+        /><br />
+        <textarea
+          name="message"
+          required
+          id=""
+          placeholder="message"
+          class="input"
+        ></textarea
+        ><br />
+        <p>Upload profile image</p>
+        <input
+          type="file"
+          required
+          id="myFile"
+          name="filename"
+          placeholder="upload profile image"
+          class="input"
+        /><br />
+
+        <!-- Honeypot Spam Protection -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+        <button type="submit" class="submit">Submit Form</button>
+      </form>
+    </section>
+  </body>
+</html>
